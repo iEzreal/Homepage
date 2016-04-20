@@ -15,6 +15,7 @@
 		777801EA1CC7671600876250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777801E81CC7671600876250 /* LaunchScreen.storyboard */; };
 		777801F51CC7671600876250 /* HomepageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 777801F41CC7671600876250 /* HomepageTests.m */; };
 		777802001CC7676700876250 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 777801FF1CC7676700876250 /* bg.png */; };
+		777802061CC7702700876250 /* StretchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777802051CC7702700876250 /* StretchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		777801F41CC7671600876250 /* HomepageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepageTests.m; sourceTree = "<group>"; };
 		777801F61CC7671600876250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		777801FF1CC7676700876250 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		777802041CC7702700876250 /* StretchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchView.h; sourceTree = "<group>"; };
+		777802051CC7702700876250 /* StretchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				777801E81CC7671600876250 /* LaunchScreen.storyboard */,
 				777801EB1CC7671600876250 /* Info.plist */,
 				777801DA1CC7671600876250 /* Supporting Files */,
+				777802041CC7702700876250 /* StretchView.h */,
+				777802051CC7702700876250 /* StretchView.m */,
 			);
 			path = Homepage;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777802061CC7702700876250 /* StretchView.m in Sources */,
 				777801E21CC7671600876250 /* ViewController.m in Sources */,
 				777801DF1CC7671600876250 /* AppDelegate.m in Sources */,
 				777801DC1CC7671600876250 /* main.m in Sources */,

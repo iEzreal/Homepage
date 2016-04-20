@@ -7,13 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "StretchHeaderView.h"
+#import "StretchView.h"
 
 #define kHeight 300
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) UIImageView *stretchImage;
+
+@property(nonatomic, strong) StretchView *stretchView;
 @property(nonatomic, strong) UITableView *tableView;
 
 @end
@@ -30,12 +32,9 @@
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
     
-    // 拉伸的图片
-    _stretchImage = [[UIImageView alloc] init];
-    _stretchImage.frame = CGRectMake(0, -kHeight, self.view.frame.size.width, kHeight);
-    _stretchImage.contentMode = UIViewContentModeScaleToFill;
-    _stretchImage.image = [UIImage imageNamed:@"bg"];
-    [_tableView addSubview:_stretchImage];
+    _stretchView = [[StretchView alloc] init];
+    _stretchView.frame = CGRectMake(0, -kHeight, self.view.frame.size.width, kHeight);
+    [_tableView addSubview:_stretchView];
     
 }
 
@@ -49,8 +48,7 @@
         CGFloat height =  ABS(yOffset);
         CGFloat x = - (width - self.view.frame.size.width) / 2;
         CGFloat y = yOffset;
-        
-        _stretchImage.frame = CGRectMake(x, y, width, height);
+        _stretchView.frame = CGRectMake(x, y, width, height);
     }
 }
 
